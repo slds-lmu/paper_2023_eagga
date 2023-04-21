@@ -1,0 +1,11 @@
+^renv\.lock$
+^LICENSE\.md$
+README.*
+README_files
+^man-roxygen$
+^attic$
+^renv$
+batchtools.conf.R
+renv.lock
+slurm_wyoming.tmpl
+.Rprofile
