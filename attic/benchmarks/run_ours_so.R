@@ -74,7 +74,7 @@ eval_ = function(job, data, instance, ...) {
 }
 
 library(batchtools)
-reg = makeExperimentRegistry(file.dir = "/gscratch/lschnei8/registry_eagga_ours_so", source = source_files)
+reg = makeExperimentRegistry(file.dir = "FIXME_path/registry_eagga_ours_so", source = source_files)
 #reg = makeExperimentRegistry(file.dir = NA)
 saveRegistry(reg)
 
@@ -172,7 +172,7 @@ results = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   data
 })
 results = rbindlist(results$result, fill = TRUE)
-saveRDS(results, "/gscratch/lschnei8/eagga_ours_so.rds")
+saveRDS(results, "FIXME_path/eagga_ours_so.rds")
 
 info = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   if (job$algo.pars$method != "rf") {
@@ -191,5 +191,5 @@ info = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   data
 })
 info = rbindlist(info$result, fill = TRUE)
-saveRDS(info, "/gscratch/lschnei8/eagga_ours_so_info.rds")
+saveRDS(info, "FIXME_path/eagga_ours_so_info.rds")
 

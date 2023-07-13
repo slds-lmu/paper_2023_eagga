@@ -70,7 +70,7 @@ eval_ = function(job, data, instance, ...) {
 }
 
 library(batchtools)
-reg = makeExperimentRegistry(file.dir = "/gscratch/lschnei8/registry_eagga_ablation", source = source_files)
+reg = makeExperimentRegistry(file.dir = "FIXME_path/registry_eagga_ablation", source = source_files)
 #reg = makeExperimentRegistry(file.dir = NA)
 saveRegistry(reg)
 
@@ -155,7 +155,7 @@ results = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   data
 })
 results = rbindlist(results$result, fill = TRUE)
-saveRDS(results, "/gscratch/lschnei8/eagga_ablation_xgboost_mo.rds")
+saveRDS(results, "FIXME_path/eagga_ablation_xgboost_mo.rds")
 
 tab = getJobTable()
 tab = tab[job.id %in% findDone()$job.id & tags == "eagga_ablation"]
@@ -173,7 +173,7 @@ results = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   data
 })
 results = rbindlist(results$result, fill = TRUE)
-saveRDS(results, "/gscratch/lschnei8/eagga_ablation_eagga.rds")
+saveRDS(results, "FIXME_path/eagga_ablation_eagga.rds")
 
 tab = getJobTable()
 tab = tab[job.id %in% findDone()$job.id]
@@ -189,5 +189,5 @@ info = reduceResultsDataTable(tab$job.id, fun = function(x, job) {
   data
 })
 info = rbindlist(info$result, fill = TRUE)
-saveRDS(info, "/gscratch/lschnei8/eagga_ablation_info.rds")
+saveRDS(info, "FIXME_path/eagga_ablation_info.rds")
 
