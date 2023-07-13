@@ -1,8 +1,14 @@
 In this repository we release all code to replicate all results, tables and figures presented in the paper: Multi-Objective Optimization of Performance and Interpretability of Tabular Supervised Machine Learning Models
 
-**Note that we also offer a standalone R package for the EAGGA implementation, which can be found at https://github.com/sumny/eagga.
+<hr>
+
+<span style="font-size: larger;"><b>
+Note that we also offer a standalone R package for the EAGGA implementation, which can be found at https://github.com/sumny/eagga.
 While this repository here is primarily intended for replicating experiments, generating figures, and reproducing tables as reported in the paper, we strongly encourage utilizing https://github.com/sumny/eagga for practical use and research purposes.
-This alternate repository is actively maintained, provides enhanced usability and features, and undergoes continuous testing.**
+This alternate repository is actively maintained, provides better documentation as well as enhanced usability and features, and undergoes continuous testing.
+</b></span>
+
+<hr>
 
 The repository is structured as follows:
 
@@ -12,10 +18,12 @@ The repository is structured as follows:
       The EAGGA implementation can be found in `TunerEAGGA.R`
   * `attic/benchmarks` contains all code needed to rerun benchmarks and generate figures and reproduce tables as reported in the paper
     * `plots/` contains all figures included in the extended version of the paper
-    * `results/` contains aggregated results of the benchmark experiments and ablation studies used to generate figures and tables.
+    * `results/` will contain aggregated results of the benchmark experiments and ablation studies used to generate figures and tables.
+       To obtain these results, please download `compressed_results.tar.gz` from here https://syncandshare.lrz.de/getlink/fi9uoRjpZy9vwL3bXXzFMa/compressed_results.tar.gz and uncompress it via `tar -xzvf compressed_results.tar.gz`.
        If you are interested in the raw results in the form of `batchtools` registries, please open an issue
     * `run_ours_so.R` and `run_ablation.R` contain code to run the actual benchmark experiments and ablation studies via `batchtools`
-    * `analyze_ours_so.R` and `analyze_ablation.R` contain all code to analyze the aggregated `results/` and generate figures and tables
+    * `analyze_ours_so.R` and `analyze_ablation.R` contain all code to analyze the aggregated `results/` and generate figures and tables.
+       Note that running these scripts will overwrite existing content in `plots/`
     * `helpers.R` contains helper functions and code used within the main routines
     * `majority_vote.R` contains code to generate the majority vote baseline on each task
     * `openml_tasks.R` contains code to generate an overview of the `OpenML` tasks used within benchmark experiments and ablation studies
