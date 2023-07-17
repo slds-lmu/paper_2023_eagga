@@ -46,7 +46,7 @@ remotes::install_local("", upgrade = "never")  # install the eagga package
 
 Setting up `EBmlr3` is described here: https://github.com/sumny/EBmlr3
 
-Then run the benchmarks and ablation studies as described in `attic/benchmarks/run_ours_so.R` and `attic/benchmarks/run_ablation.R`
+Then run the benchmarks and ablation studies as described in `attic/benchmarks/run_ours_so.R` and `attic/benchmarks/run_ablation.R`.
 Make sure to adapt some paths when constructing `batchtools` registries or saving results, i.e., in `run_ours_so.R` and `run_ablation.R`.
 We indicate this via `"FIXME_path"` as a placeholder.
 
