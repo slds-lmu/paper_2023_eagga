@@ -1,4 +1,4 @@
-In this repository we release all code to replicate all results, and reproduces tables and figures presented in the paper: [Multi-Objective Optimization of Performance and Interpretability of Tabular Supervised Machine Learning Models](https://doi.org/10.1145)
+In this repository we release all code to replicate all results, and reproduces tables and figures presented in the paper: [Multi-Objective Optimization of Performance and Interpretability of Tabular Supervised Machine Learning Models](https://doi.org/10.1145/3583131.3590380)
 
 <hr>
 
